@@ -17,6 +17,7 @@ export class WeatherBodyStore extends BaseStore {
         let apiurl = `${appSetting.api}?q=${city},${countryCode}&APPID=${appSetting.apikey}`;
         let result  = await this.doRequest<any>(apiurl, HttpMethod.GET);
         console.warn(result);
+        console.log(result);
     }
 
     // http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=ae5e37db2d45a69f977d060ebc13045d

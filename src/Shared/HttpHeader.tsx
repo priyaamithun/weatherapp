@@ -10,9 +10,7 @@ export class HttpHeader {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Allow-Headers': 'Authorization, Lang',
-            dataType: 'jsonp',
-
-        };
+             };
         this.body = undefined;
     }
 }
