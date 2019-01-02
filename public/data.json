@@ -1,3 +1,4 @@
 {
-    "apikey" : "ae5e37db2d45a69f977d060ebc13045d"
+    "apikey" : "ae5e37db2d45a69f977d060ebc13045d",
+    "api" : "http://api.openweathermap.org/data/2.5/weather"
 }

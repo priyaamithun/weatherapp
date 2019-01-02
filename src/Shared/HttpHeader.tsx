@@ -5,7 +5,13 @@ export class HttpHeader {
 
     constructor() {
         this.headers = {
-            'Content-Type': 'application/json', // set the default content type to be json
+            'Content-Type': 'application/json', // set the default content type to be json,
+            'Access-Control-Allow-Methods': 'GET, POST',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials': 'true',
+            'Access-Control-Allow-Headers': 'Authorization, Lang',
+            dataType: 'jsonp',
+
         };
         this.body = undefined;
     }
