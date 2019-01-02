@@ -24,6 +24,13 @@ export class WeatherBodyStore extends BaseStore {
         c2.country = 'Singapore';
         c2.temperature = 35;
         this.cards.push(c2);
+
+        let c3 = new WeatherCardModel();
+        c3.id = 3;
+        c3.city = 'New Jersey';
+        c3.country = 'United States';
+        c3.temperature = 10;
+        this.cards.push(c3);
     }
 }
 

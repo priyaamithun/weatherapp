@@ -1,0 +1,20 @@
+.navbar{
+    display: inline-block;
+    left:950px;
+    position: absolute;
+
+}
+
+
+.navbar ul li{
+    list-style: none;
+    color:white;
+    display: inline;
+    margin:10px;
+}
+
+.clear:after {
+    clear: both;
+    display: table;
+    content: "";
+}

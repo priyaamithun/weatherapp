@@ -1,0 +1,47 @@
+body{
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.Card{
+    
+    clear: both;
+    margin:90px 0  10px 0;
+    display: inline-block;
+    
+
+}
+.CardBody{
+    padding-top:60px;
+    background-color: #5b5857;
+    color:#c66c59;
+    box-shadow: 10px 10px 8px #807e7e;
+    height:22rem;
+
+
+
+}
+.CardText ul li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:  1rem;
+    font-style: italic;
+    text-align: center;
+    list-style-type: none;
+    color:#c66c59;
+
+
+}
+.button{
+    background-color: #a58781;
+    color:white;
+}
+.button:hover{
+    color:white;
+}
+.clear:after {
+    clear: both;
+    display: table;
+    content: "";
+}
