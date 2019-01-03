@@ -7,11 +7,11 @@ export class WeatherHeader extends React.Component<Props, any> {
   public render() {
     return (
       <div className="navbar clearfix">
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-      </ul>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
       </div>
     );
   }

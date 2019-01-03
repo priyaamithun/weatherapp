@@ -1,40 +1,34 @@
 import * as React from 'react';
-import WeatherCardModel from './WeatherCardModel';
-import {  Card, CardBody, CardTitle, CardText, Col, MDBBtn  } from 'mdbreact';
+import WeatherCardModel from '../../Model/WeatherCardModel';
+import {  Card, CardBody, CardTitle, CardText, Col } from 'mdbreact';
+import { observer } from 'mobx-react';
 import  './WeatherCard.css';
 
 export interface Props {
     model: WeatherCardModel;
+    onClose: ((id: number) => void);
 }
  
-export interface Istate {
-Image1: '../images/Austin-Texas-Capital.jpg';
-Image2: '../images/new-york-2017-columbus-circle-01.jpg';
-Image3: '../images/Singapore-Merlion1.jpg';
-
-} 
-
-export class WeatherCard extends React.Component<Props, Istate, {}> {
+@observer
+export class WeatherCard extends React.Component<Props, {}> {
 
   public render() {
     return (
       <div className="Card clearfix"> 
         <Col>
-        <Card style={{width: '22rem'}} >
-      
-        <CardBody className="CardBody">
-          <CardTitle>Weather Report</CardTitle>
-          <CardText className="CardText">
-        <ul>
-          <li>City: {this.props.model.city}</li>
-       <li>Country: {this.props.model.country}</li>
-        <li>Temperature: {this.props.model.temperature}</li>
-        </ul>
-        </CardText>
-        <MDBBtn className="button" size="sm" color="light-orange" href="#">Click Detailed Weather</MDBBtn>
-
-        </CardBody>
-        </Card>
+          <button onClick={() => this.props.onClose(this.props.model.id)} className="button">X</button>
+          <Card style={{width: '22rem'}} >
+            <CardBody className="CardBody">
+              <CardTitle>Weather Report</CardTitle>
+              <CardText className="CardText">
+                <ul>
+                  <li>City: {this.props.model.name}</li>
+                  <li>Country: {this.props.model.country}</li>
+                  <li>Temperature: {this.props.model.temperature}</li>
+                </ul>
+              </CardText>
+            </CardBody>
+          </Card>
         </Col>
       </div>
     );

@@ -1,2 +1,2 @@
 export {WeatherCard} from './WeatherCard';
-export {WeatherCardModel} from './WeatherCardModel';
+export {WeatherCardModel} from '../../Model/WeatherCardModel';
