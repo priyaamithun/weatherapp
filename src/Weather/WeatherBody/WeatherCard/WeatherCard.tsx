@@ -16,8 +16,9 @@ export class WeatherCard extends React.Component<Props, {}> {
     return (
       <div className="Card clearfix"> 
         <Col>
-          <button onClick={() => this.props.onClose(this.props.model.id)} className="button">X</button>
           <Card style={{width: '22rem'}} >
+          <button onClick={() => this.props.onClose(this.props.model.id)} className=" btn btn-sm button">X</button>
+
             <CardBody className="CardBody">
               <CardTitle>Weather Report</CardTitle>
               <CardText className="CardText">

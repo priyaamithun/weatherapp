@@ -6,11 +6,11 @@ export interface Props {
 export class WeatherHeader extends React.Component<Props, any> {
   public render() {
     return (
-      <div className="navbar clearfix">
+      <div className="nav clearfix">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><a href="" >Home</a></li>
+          <li><a href="" >About Us</a></li>
+          <li><a href="" >Contact Us</a></li>
         </ul>
       </div>
     );
