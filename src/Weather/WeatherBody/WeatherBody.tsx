@@ -3,6 +3,7 @@ import { WeatherFooter, WeatherHeader } from '..';
 import WeatherBodyStore from './WeatherBodyStore';
 import WeatherCard from './WeatherCard/WeatherCard';
 import { observer } from 'mobx-react';
+import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from 'mdbreact';
 
 export interface Props {
 }
@@ -20,45 +21,18 @@ export class WeatherBody extends React.Component<Props, {}> {
                     //         <option value="singapore, sg">Singapore</option>
                     //     </select>
                     // </div>
-
-        <div 
-         className="btn-group"
-        >
-        <button 
-         className="btn btn-primary dropdown-toggle mr-4" 
-         type="button" 
-         data-toggle="dropdown" 
-         aria-haspopup="true"
-         aria-expanded="false"
-        >Basic dropdown
-        </button>
-
-         <div className="dropdown-menu">
-         <a className="dropdown-item" href="#">Action</a>
-         <a className="dropdown-item" href="#">Another action</a>
-         <a className="dropdown-item" href="#">Something else here</a>
-         <div className="dropdown-divider" />
-  <a className="dropdown-item" href="#">Separated link</a>
-</div>
-
-<div className="dropdown">
-  <button 
-   className="btn btn-primary dropdown-toggle" 
-   type="button" 
-   id="dropdownMenu1" 
-   data-toggle="dropdown"
-   aria-haspopup="true" 
-   aria-expanded="false"
-  >Material dropdown
-  </button>
-  <div className="dropdown-menu dropdown-primary">
-    <a className="dropdown-item" href="#">Action</a>
-    <a className="dropdown-item" href="#">Another action</a>
-    <a className="dropdown-item" href="#">Something else here</a>
-    <a className="dropdown-item" href="#">Something else here</a>
-   </div>
-   </div>
-        </div>
+<div>
+                    <MDBDropdown >
+                    <MDBDropdownToggle caret="true" color="primary">
+                      Weather Search
+                    </MDBDropdownToggle>
+                    <MDBDropdownMenu basic="true" onChange={(e) => this.store.onWeatherselected(e)}>
+                      <MDBDropdownItem value="austin, us">Austin</MDBDropdownItem>
+                      <MDBDropdownItem  value="london, uk">London</MDBDropdownItem>
+                      <MDBDropdownItem value="singapore, sg">Singapore</MDBDropdownItem>
+                    </MDBDropdownMenu>
+                  </MDBDropdown>
+              </div>
 );
         return (
         <div>
