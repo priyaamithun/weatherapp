@@ -1,5 +1,13 @@
+body{
+    background: url(./images/fog-foggy-forest-158607.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+
 .search{
-margin-top:15px;
+margin:15px 20px;
 position: relative;
 height:35px;
 background-color: transparent;

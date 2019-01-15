@@ -15,7 +15,7 @@ export interface Props {
   public render() {
     return(
         <div>
-        <select className="search" onChange={(e) => this.store.onWeatherselected(e)}>
+        <select className="" onChange={(e) => this.store.onWeatherselected(e)}>
 <option>Search Location</option>
 <option value="austin, us">Austin</option>
 <option value="london, uk">London</option>
