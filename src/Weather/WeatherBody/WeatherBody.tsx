@@ -13,10 +13,10 @@ export class WeatherBody extends React.Component<Props, {}> {
    
         return (
         <div>
-        
+        <div className="NavContent">
         <WeatherHeader />
         <Search />
-
+        </div>
             </div>
         );
     }

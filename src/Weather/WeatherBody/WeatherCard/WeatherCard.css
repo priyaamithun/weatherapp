@@ -1,16 +1,7 @@
-body{
-    background: url(../images/fog-foggy-forest-158607.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: top;
-}
 
-
-.Card{
+.Cards{
     
-    clear: both;
-    margin:90px 0  10px 0;
-    display: inline-block;
+    display:inline-table;
     
 
 }
@@ -42,9 +33,4 @@ body{
 }
 .button:hover{
     color:white;
-}
-.clear:after {
-    clear: both;
-    display: table;
-    content: "";
 }
