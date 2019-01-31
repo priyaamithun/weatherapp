@@ -15,7 +15,7 @@ export class WeatherBodyStore extends BaseStore {
     }
 
     onWeatherselected(e: any) {
-        this.loadCards(e.target.value);
+        this.loadCards(e.target.elements.city.value);
     }
 
     loadCards = async(city: string) => {

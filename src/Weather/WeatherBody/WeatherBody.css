@@ -1,0 +1,24 @@
+body{
+    background: url(./images/fog-foggy-forest-158607.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.Navbar{
+    background: rgba(59, 56, 56, 0.5);
+}
+.search{
+margin:0px 20px;
+position: relative;
+height:35px;
+background-color: transparent;
+font-style: italic;
+font-family:'Lato', sans-serif;
+font-weight: bold;
+color: wheat;
+
+}
+
+
+  

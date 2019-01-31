@@ -11,14 +11,12 @@ export interface Props {
  
 @observer
 export class WeatherCard extends React.Component<Props, {}> {
-
   public render() {
     return (
       <div className="Cards"> 
         <Col>
           <Card style={{width: '22rem'}} >
           <button onClick={() => this.props.onClose(this.props.model.id)} className=" btn btn-sm button">X</button>
-
             <CardBody className="CardBody">
               <CardTitle>Weather Report</CardTitle>
               <CardText className="CardText">

@@ -1,13 +1,14 @@
 .nav{
 clear: both;
 display: inline-block;
-left:10px;
+right:10px;
 position: absolute;
 font-family:'Lato', sans-serif;
 font-size:24px;
 font-weight:bolder;
 font-style: italic;
 padding-top:10px;
+
 }
 
 

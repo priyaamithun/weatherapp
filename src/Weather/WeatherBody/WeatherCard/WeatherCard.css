@@ -1,15 +1,16 @@
 
 .Cards{
-    
+    margin-top:50px;
     display:inline-block;
-    
+
 
 }
 .CardBody{
+    background-color: rgba(65, 60, 60, 0.5);
+
     padding-top:60px;
-    background-color: #5b5857;
     color:#c66c59;
-    box-shadow: 10px 10px 8px #807e7e;
+    box-shadow: 5px 5px 5px #807e7e;
     height:22rem;
 
 
@@ -25,12 +26,12 @@
 
 
 }
-.button{
+.btn{
     background-color: #a58781;
     color:white;
     left:280px;
     position: absolute;
 }
-.button:hover{
+.btn:hover{
     color:white;
 }
